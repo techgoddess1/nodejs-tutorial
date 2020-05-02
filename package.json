@@ -1,12 +1,32 @@
 {
   "name": "nodejs-tutorial",
   "version": "1.0.0",
-  "description": "\"sample tutorisl for implementing a server in nodejs\"",
+  "description": "\"sample tutorial for implementing a server in nodejs\"",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "**/*.js"
+    ],
+    "exec": "npm start",
+    "ext": "js"
+  }
 }
