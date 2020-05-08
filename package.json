@@ -1,22 +1,26 @@
 {
-  "name": "nodejs-tutorial",
+  "name": "techjobs",
   "version": "1.0.0",
-  "description": "\"sample tutorial for implementing a server in nodejs\"",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "ejs": "^3.1.2",
-    "express": "^4.17.1"
-  },
   "devDependencies": {
     "cross-env": "^7.0.2",
     "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.1",
+    "mongoose": "^5.9.11"
   },
   "nodemonConfig": {
     "ignore": [
@@ -24,9 +28,8 @@
       "node_modules"
     ],
     "watch": [
-      "**/*.js"
+      "*/.js"
     ],
-    "exec": "npm start",
     "ext": "js"
   }
 }
